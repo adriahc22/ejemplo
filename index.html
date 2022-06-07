@@ -26,7 +26,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#introducción">Introducción</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#datascrapping">Data Scrapping</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#datascrapping">Extracción de la información</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#featureengineering">Feature Engineering</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#visualización">Visualización</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#cosas">cosas</a></li>
@@ -45,32 +45,39 @@
                     </h1>
                     <div class="subheading mb-5">
                         Oriol, Diego, Miquel, Pau, Adrià 
-                        <a href="#">UB</a>
+                        <a href="https://www.ub.edu/">Universitat de Barcelona</a>
                     </div>
                     <p class="lead mb-5">El draft de la NBA (1947) es un procedimiento de selección de jugadores para entrar en la NBA por el cual las franquicias que forman parte de la liga incorporan a sus equipos jugadores menores de
                     23 años procedentes de las universidades norteamericanas o de las ligas de otros países.</p>
                     <p class="lead mb-5">En el presente trabajo se realizará un modelo predictivo para poder evaluar a los jugadores que van a ser elegibles de cara al Draft de 2022 en función de los datos históricos recopilados desde el año 1979. Para ello, se han scrappeado las
                     estadísticas de juego de todos los jugadores desde dicho año y tras un proceso de data cleaning se han agrupado en clústers los tipos de jugadores que han sido en su trayectória deportiva.</p>
                     <div class="social-icons">
-                        <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        
                         <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
-                    </div>
+                        
+                        
+                </div>
                 </div>
             </section>
             <hr class="m-0" />
             <!-- Data Scrapping-->
             <section class="resume-section" id="datascrapping">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Data Scrapping</h2>
+                    <h2 class="mb-5">Extracción de la información</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Aquí explicaremos cómo hemos hecho el Data Scrapping</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                            <h3 class="mb-0">Data Scrapping</h3>
+                            <div class="subheading mb-3">Metodología</div>
+                            <p>El "data scrapping" es una técnica de programación que consiste en la extracción masiva (mediante ingeniería inversa) de datos mediante la descarga de la información subyacente en objetos que almacenan
+                            datos generalmente no estructurados (por ejemplo, en nuestro caso, datos de los archivos HTML fuente de las páginas de "Basketball Reference").</p>
+                            <p> En el contexto del proyecto desarrollado "Clusterización de jugadores de la NBA para posterior aproximación/predicción de la tipología de jugadores que participarán en el Draft de 22"
+                        , el apartado de "Data Gathering" (obtenicón de datos) se ha llevado a cabo mediante el scrapping de datos. Principalmente se han extraído (mediante librerías específicas de Phyton) estadísticas medias
+                            por temporada para cada jugador de la NBA de la página web "Basketball Reference".</p>
+                            <p>En referencia a la metodología utilizada en este notebook, basándonos principalmente en las librerías y frameworks propuestos por "Pandas" y "BeautifulSoup", descargamos la información de los HTML
+                            de las distintas webs, recorremos la estructura de árbol hasta capturar las tablas u objetos con los datos que sean de nuestro interés para el proyecto. A continuación, los almacenamos en DataFrames y acabamos obteniendo objetos tabulares
+                            que aglutinan toda la información que usaremos a posteriori en otros notebooks.</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">Primeras 3 semanas</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
