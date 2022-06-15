@@ -26,11 +26,11 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#introducción">Introducción</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#datascrapping">Extracción de la información</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#datascrapping">Data Scrapping</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#datacleaning">Data Cleaning</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#featureengineering">Feature Engineering</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#visualización">Visualización</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#cosas">cosas</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#cosas2">cosas2</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#clústers">Clústers</a></li>
                 </ul>
             </div>
         </nav>
@@ -63,11 +63,10 @@
             <!-- Data Scrapping-->
             <section class="resume-section" id="datascrapping">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Extracción de la información</h2>
+                    <h2 class="mb-5">Data Scrapping</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Metodología</h3>
-                            <div class="subheading mb-3">Data Scrapping</div>
                             <p>El data scrapping es una técnica de programación que consiste en la extracción masiva (mediante ingeniería inversa) de datos mediante la descarga de la información subyacente en objetos que almacenan
                             datos generalmente no estructurados (por ejemplo, en nuestro caso, datos de los archivos HTML fuente de las páginas de Basketball Reference).</p>
                             <p> En el contexto del proyecto desarrollado "Clusterización de jugadores de la NBA para posterior aproximación/predicción de la tipología de jugadores que participarán en el Draft de 22"
@@ -77,6 +76,10 @@
                             de las distintas webs y recorremos la estructura de árbol hasta capturar las tablas u objetos con los datos que sean de nuestro interés para el proyecto. A continuación, los almacenamos en DataFrames y acabamos obteniendo objetos tabulares
                             que aglutinan toda la información que usaremos a posteriori en otros notebooks.
                             </p>
+                            <p> En las siguientes imágenes se expone el data set original de la página web Basketball Reference juntamente con el output del data scrapping programado para extraer las estadísticas que son de nuestro interes.</p>
+                            <div class="subheading mb-3">Función All-Players</div>
+                            <p> La siguiente función de Data Scrapping localiza en la página web de origen el nombre de todos los jugadores que han jugado en la NBA según el registro de la misma página y retorna un output de una lista tabular 
+                                con los nombres registrados ordenados alfabéticamente.</p>
                             <img class="img-fluid img-profile mx-auto mb-2" src="código1.png" alt="..." width="950" height="750" />
                             <img class="img-fluid img-profile mx-auto mb-2" src="codigo2.png" alt="..." width="950" height="750" />
                         </div>
@@ -84,34 +87,18 @@
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <div class="subheading mb-3">Data Cleaning</div>
                             <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">December 2011 - March 2013</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">cositas</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2010 - December 2011</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">cositas2</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div>
-                    </div>
-                </div>
             </section>
             <hr class="m-0" />
-            <!-- Feature Engineering-->
-            <section class="resume-section" id="featureengineering">
+            <!-- Data Cleaning-->
+            <section class="resume-section" id="datacleaning">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Feature Engineering</h2>
+                    <h2 class="mb-5">Data Cleaning</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">University of Colorado Boulder</h3>
@@ -132,29 +119,30 @@
                 </div>
             </section>
             <hr class="m-0" />
+            <!-- Feature Engineering-->
+            <section class="resume-section" id="featureengineering">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Feature Engineering</h2>
+                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <div class="subheading mb-3">Workflow</div>
+                  
+                </div>
+            </section>
+            <hr class="m-0" />
             <!-- Visualización-->
             <section class="resume-section" id="visualización">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Visualización</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <div class="subheading mb-3">Workflow</div>
-                  <iframe title="Data Visualization - NBA_v.1 (1)" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=968abbb3-1aec-47e5-88ee-f2902b00a93f&autoAuth=true&ctid=34b114a7-0e6f-4163-ba95-04afa6770eee&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXdlc3QtZXVyb3BlLWItcHJpbWFyeS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Cosas-->
-            <section class="resume-section" id="cosas">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Cosas</h2>
                     <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
                     <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
                 </div>
+                <iframe title="Data Visualization - NBA_v.1 (1)" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=968abbb3-1aec-47e5-88ee-f2902b00a93f&autoAuth=true&ctid=34b114a7-0e6f-4163-ba95-04afa6770eee&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXdlc3QtZXVyb3BlLWItcHJpbWFyeS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
             </section>
             <hr class="m-0" />
-            <!-- Cosas2-->
-            <section class="resume-section" id="cosas2">
+            <!-- Clústers-->
+            <section class="resume-section" id="clústers">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Cosas2</h2>
+                    <h2 class="mb-5">Clústers</h2>
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
