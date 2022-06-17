@@ -124,8 +124,10 @@
                             <h3 class="mb-0">Metodología</h3>
                             <p> El Data Cleaning o limpieza de datos engloba varios procesos destinados a mejorar la calidad de los datos anteriormente extarídos mediante Data Scraping. 
                             Estos procesos se utilizan para corregir o eliminar registros inexactos en una base/conjunto de datos. En general, esto significa identificar y sustituir los datos o registros incompletos, inexactos, corruptos o irrelevantes.</p>
-                            <p> Tras scrapear los datos, se ha llevado a cabo un análisis para detectar las estadísticas incompletas de cada jugador registrado. Para ello, tras clasificar todos los jugadores y sus respectivas estadísticas en un raw data,
-                            se han localizado los datos incompletos a partir de la función de "is.null". </p>
+                            <p> Tras scrapear los datos, se ha llevado a cabo un análisis para detectar las estadísticas incompletas de cada jugador registrado.</p>
+                            <p>Para llevar a cabo el proceso de detección de datos incompletos, tras clasificar todos los jugadores y sus respectivas estadísticas en un raw data,
+                            se han localizado los datos incompletos mediante la instrucción ".isnull().sum()". Este comando nos permite detectar las estadísticas vacías de cada jugador registrado en el raw data y calcular qué porcentaje de datos quedan incompletos por cada variable scrapeada de cada jugador.
+                            Obtenemos un dataframe de cada variable donde los datos incompletos quedan visualizados en blanco:</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>
                     </div>
