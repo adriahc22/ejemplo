@@ -85,6 +85,28 @@
                         </div>
                         <p> Una vez se han scrapeado los datos con todos los jugadores registrados en la página web original, se procede a extraer la información individual para cada jugador siguiendo la metodología del data scraping. Se han considerado las siguientes funciones:
                         </p>
+                        <div class="subheading mb-3">Get Player Stats</div>
+                        <p> Función que captura el objeto tabla determinado en los argumentos (según el tipo de estadística que se quiera capturar), presente en la página web del jugador del que se quiere scrapear las estadísticas NBA. 
+                        Se puede decidir si se quiere obtener estadísticas medias por temporada o medias totales de carrera profesional, si son estadístcas de Regular Season o de Playoffs y si se quiere extraer las estadísticas en general o por equipo en el que haya jugado el jugador.</p>
+                        <div class="subheading mb-3">Get Player Extra Information</div>
+                        <p> Función que permite recuperar información extra o específica de cada jugador que no se encuentra presente en objetos tabulares, sinó en objetos rectangulares específicos de HTML. Con esta función se quiere obtener informormación relacionada con títulos y reconocimientos idividuales
+                        (MVP, Hall-of-Fame, ROY, etc.) y colectivos (NBA Champion, Conference Champion, etc.).</p>
+                        <div class="subheading mb-3">Get Player Teams</div>
+                        <p> Función que permite recuperar en qué equipos y en qué intervalos de tiempo los jugadores formaron parte de ciertos equipos. Los objetos con esta información no son objetos tabulares, sinó objetos rectangulares específicos de HTML.
+                        </p>
+                        <div class="subheading mb-3">Get Player College Stats</div>
+                        <p> Función que captura el objeto tabla determinado en los argumentos (según el tipo de estadística que se quiera capturar), presente en la página web del jugador del que se quiere scrapear las estadísticas de COLLEGE. Se puede
+                        decidir si se quiere obtener estadísticas medias por temporada o medias totales de carrera en college, estadísticas medias por temporada o torneo de conferencia (en caso de tenerlas) y si se quiere extraer las estadísticas en general o por equipo en el que haya jugado el jugador.
+                        </p>
+                        <div class="subheading mb-3">Get Player College Extra Information</div>
+                        <p> Función que permite recuperar información extra o específica de los jugadores durante su época de college y que no se encuentra presente en objetos tabulares, sinó en objetos rectangulares específicos de HTML. Con esta función se quiere obtener información
+                        relacionada con títulos y reconocimientos individuales (Big East Tourney MVP, etc.) y colectivos (NCAA Champion, Conference Champion, etc.).</p>
+                        <div class="subheading mb-3">Get Player College Teams</div>
+                        <p> Función que permite recuperar en qué equipos y en qué intervalos de tiempo los jugadores formaron parte de cada equipo durante su época college.</p>
+                        <div class="subheading mb-3">Get All Drafted Players</div>
+                        <p> Función que permite obtener un DataFrame con un registro para cada jugador de la NBA draftedo con información básica sobre el Draft (número de pick, college, etc.).</p>
+                        <div class="subheading mb-3">Get All Teams</div>
+                        <p> Función que permite recuperar todos los equipos que han participado en la liga NBA a lo largo de la historia.</p>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
