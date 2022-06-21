@@ -131,12 +131,13 @@
                             se han localizado los datos incompletos mediante la instrucción ".isnull().sum()". Este comando nos permite detectar las estadísticas vacías de cada jugador registrado en el raw data y calcular qué porcentaje de datos quedan incompletos por cada variable scrapeada.
                             Obtenemos un dataframe de cada variable donde los datos incompletos quedan visualizados en blanco:</p>
                             <img class="img-fluid img-profile mx-auto mb-2" src="assets/img/cleaning1.png" alt="..." width="925" height="650" title="Datos incompletos de Get All Players" />
-                            <p>Existen jugadores registrados que, por ejemplo, no tienen datos de Colllege debido a que saltaron directamente a la NBA o jugadores que no disponen de ciertos datos debido a que tuvieron poca participiación durante una o varias temporadas. Estos son algunos ejemplos
-                            de los motivos que pueden justificar la ausencia de datos. Estos datos faltantes se han rellenado con "0s" en las columnas correspondientes del raw data.
+                            <p>Existen jugadores registrados que, por ejemplo, no tienen datos de Colllege debido a que saltaron directamente a la NBA o que no fueron drafteados, jugadores que no disponen de ciertos datos debido a que tuvieron poca participiación durante una (o varias temporadas) o jugadores que no tiraron ningún triple durante una (o varias) temporadas . Estos son algunos ejemplos
+                            de los motivos que pueden justificar la ausencia de datos.
                             </p>
-                            <p> Tras filtrar los jugadores a partir del año 1986 y rellenar los datos incompletos, se procede a la comprobación del tipo de variable a través de la instrucción ".dtypes()". De esta forma, podemos modificar el tipo de variable según sea conveniente para el análisis individual de cada estadística y
-                             comprobar posteriormente que el tipo de datos que se usarán posteriormente para el feature engineering y la determinación de los clústers son correctos.</p>
-                             <img class="img-fluid img-profile mx-auto mb-2" src="assets/img/cleaning1.png" alt="..." width="925" height="650" title="Datos incompletos de Get All Players" />
+                            <p> Tras filtrar los jugadores a partir del año 1986 y localizar los datos incompletos, se procede a la comprobación del tipo de variable a través de la instrucción ".dtypes()". De esta forma, podemos modificar el tipo de variable según sea conveniente para el análisis individual de cada estadística y
+                             comprobar que el tipo de datos que se usarán posteriormente para el feature engineering y la determinación de los clústers son correctos.</p>
+                             <img class="img-fluid img-profile mx-auto mb-2" src="assets/img/tiposvarCleaning.png" alt="..." width="925" height="650" title="Tipos de variable de los datos extraídos de la función Get All Players" />
+                            <p> Una vez loccalizados los datos incompletos y el tipo de variable de estos, se procede a rellenar los vacíos de forma que pueda llevarse a cabo el posterior estudio de clustering (por ejemplo, se rellenan con "0s" los datos relacionados con lanzamiento de triples vinculados a jugadores que no han tirado desde la línea de 3 o se rellena con "undrafted" los jugadores que no fueron drafteados).
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>
                     </div>
