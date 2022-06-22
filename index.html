@@ -51,8 +51,9 @@
                     </div>
                     <p class="lead mb-5">El draft de la NBA (1947) es un procedimiento de selección de jugadores para entrar en la NBA por el cual las franquicias que forman parte de la liga incorporan a sus equipos jugadores menores de
                     23 años procedentes de las universidades norteamericanas o de las ligas de otros países.</p>
-                    <p class="lead mb-3">En el presente trabajo se realizará un modelo predictivo para poder evaluar a los jugadores que van a ser elegibles de cara al Draft de 2022 en función de los datos históricos recopilados desde el año 1986. Para ello, se han scrappeado las
-                    estadísticas de juego de todos los jugadores desde dicho año a través de la página web <a href="https://www.basketball-reference.com/"> Basketball Reference</a> y tras un proceso de data cleaning y feature engineering se han agrupado en clústers los tipos de jugadores que han sido en su trayectória deportiva.</p>
+                    <p class="lead mb-3">En el presente trabajo se realizará un modelo de clasificación de todos los jugadores que han participado en la NBA a partir de los datos históricos recopilados desde el año 1986. Para ello, se han scrappeado las
+                    estadísticas de juego de todos los jugadores desde dicho año a través de la página web <a href="https://www.basketball-reference.com/"> Basketball Reference</a> y tras un proceso de data cleaning y feature engineering se han agrupado en clústers los tipos de jugadores que han sido en su trayectória deportiva.
+                    Esta clasificación podría utilizarse para crear un modelo predictivo para predecir qué tipo de jugador puede llegar a ser cada jugador que se presenta al Draft 2022 a partir de sus estadísticas históricas del college. </p>
                     <div class="social-icons">
                         
                         <a class="social-icon" href="https://github.com"><i class="fab fa-github"></i></a>
@@ -150,7 +151,7 @@
                      <h3 class="mb-0">Metodología</h3>
                     <p> El Feature Engineering o transformación de datos son los pasos de preprocesamiento que transforman los datos sin procesar en características que se pueden usar en algoritmos de 
                     aprendizaje automático, como por ejemplo modelos predictivos (machine learning). El proceso de Feature Engineering seguido en el presente proyecto ha seguido los 3 pasos siguientes:</p>
-                   <img class="img-fluid img-profile mx-auto mb-2" src="assets/img/featengineri.png" alt="..." width="350" height="150" title="Pasos del Feature Engineering" />
+                   <img class="img-fluid img-profile mx-auto mb-2" src="assets/img/featengineri.png" alt="..." width="250" height="75" title="Pasos del Feature Engineering" />
                     <div class="subheading mb-3">Variables Pre-agragación</div>
                     <p> Tras el data scraping y el data cleaning se obtienen las estadísticas por temporada, por lo que se obtienen varias filas por cada jugador scrapeado. Con el objetivo de llevar a cabo el data modelling (clustering)
                     se requiere clasificar todas las variables de nuestro interés en una única fila por jugador. Para ello, en esta sección se decide generar variables</p>
@@ -159,7 +160,8 @@
                     <div class="subheading mb-3">Varibles Post-agregación</div>
                     <p>. </p>
                     <div class="subheading mb-3">Correlación de columnas</div>
-                    <p>. </p>
+                    <p>El objetivo de la siguiente sección se resume en simplificar la cantidad de variables (columnas) por jugador registrado, antes y después de la agregación. Para ello se lleva a cabo un estudio de correlación para localizar las variables que se consideran dependientes.
+                    </p>
                 </div>
             </section>
             <hr class="m-0" />
