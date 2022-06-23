@@ -180,8 +180,10 @@
                     </p>
                      <img class="img-fluid img-profile mx-auto mb-2" src="assets/img/preagregacion1.png" alt="..." width="900" height="500" title="Pasos del Feature Engineering" />
                     <p>(Se observa una única fila por jugador)</p>
+                    <p>Por lo tanto, entenderemos la agragación del registro como la implementación de estas variables en los raw data de forma que se obtenga una única fila de datos por jugador.</p>
                     <div class="subheading mb-3">Varibles Post-agregación</div>
-                    <p>. </p>
+                    <p>Esta parte del proceso de transformación de datos es análoga a la generación de variables de pre-agregación. En este caso se tiene el objetivo de simplificar el número de variables de cada jugador por temporada tras la agregación del registro, es decir, una vez se han simplificado los datos en una fila por cada jugador. Para ello, se ha llevado a cabo combinaciones de columnas (variables tras la agregación). 
+                    Un ejemplo de la generación de este tipo de variables podría ser la suma de la media de los puntos de 2 más la media de los puntos de 3 a lo largo de la carrera deportiva de cada jugador.</p>
                     <div class="subheading mb-3">Correlación de columnas</div>
                     <p>El objetivo de la siguiente sección se resume en simplificar la cantidad de variables (columnas) por jugador registrado, antes y después de la agregación. Para ello se lleva a cabo un estudio de correlación para localizar las variables que se consideran dependientes y se elimina una de ellas.
                     Se impone una condición de correlación del 95% para determinar que dos variables son dependientes: </p>                       
