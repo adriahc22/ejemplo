@@ -221,7 +221,14 @@
                     el conjunto de datos obtenido.</p>
                     <p> En la siguiente tabla adaptada de la documentación de sklearn podemos observar los diferentes métodos de clustering estudiados para el proyecto, sus parámetros correspondientes, escalabilidad, su uso y las nociones de similitud que utilizan, así como el formato de datos de entrada necesario:</p>
                      <img class="img-fluid img-profile mx-auto mb-2" src="assets/img/difclustering.png" alt="..." width="800" height="350" title="Ejemplos de métodos de clustering" />
-                    <p> Tras el estudio llevado a cabo en el notebook <i>DataModelling v3</i> se decide utilizar el método de clustering K-Means.</p>
+                    <p> Tras el estudio llevado a cabo en el notebook <i>Data modelling.ipynb v3</i> se decide utilizar el método de clustering K-Means.Es el método de clustering más común, debido a que tiene muy buena escalabilidad. El algoritmo K-Means agrupa los datos tratando de separar las muestras en <i>n</i> grupos de igual varianza. En otras palabras, se divide un conjunto de <i>N</i> muestras <i>X</i> en <i>K</i> grupos distintos <i>C</i>, cada uno descrito por la media de las muestras en el grupo. Las medias se denominan comúnmente <b>centroides</b>.</p>
+                    <p>Este algoritmo tiene como objetivo elegir los centroides que minimicen un criterio conocido como inercia o suma de cuadrados dentro del clúster, concepto que puede describirse como una medida de la coherencia interna de los grupos. Los pasos que sigue el algoritmo son los siguientes:</p>
+                    <div class="subheading mb-3">Inicialización</div>
+                    <p> Se elige la localización de los centroides de los K grupos aleatoriamente. En la siguiente imagen observamos los datos como círculos y los centroides como cuadrados.</p>
+                    <div class="subheading mb-3">Asignación</div>
+                    <p> A continuación, se asigna cada dato al centroide más cercano (distancia). En el ejemplo de la imagen, los cículos cambian de color para indicar a qué centroide han sido asignados.</p>
+                    <div class="subheading mb-3">Actualización</div>
+                    <p> Seguidamente se actualiza la posición del centroide a la media aritmética de las posiciones de los datos asignados a cada grupo. En la imagen se observa como cambia la posición de los centroides (cuadrados).</p>
                 </div>
             </section>
         </div>
