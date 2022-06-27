@@ -192,9 +192,9 @@
                     <p> </p>
                     <p> Tras la transformación de datos llevada a cabo en el Feature Engineering y observar los tipos de variables que se obtienen se decide clasificar los jugadores registrados en 3 <i>GOLDEN RECORDS</i>:
                     <ol> 
-                        <li><b><i>Golden Record Regular Season</i>:</b>Se encuentran los jugadores registrados que han participado en temporada regular pero no han jugados Playoffs.</li>
-                        <li><b><i>Golden Record Playoff</i>:</b>Se encuentran los jugadores que han participado en temporada regular y han accedido a los Playoffs en una o varias temporadas (teniendo participación almenos en una de ellas)</li>
-                        <li><b><i>Golden Record Ring</i>:</b>Se encuentran los jugadores que han participado en temporada regular, han accedido a los Playoffs y los han ganado en una o varias temporadas  (teniendo participación almenos en una de ellas), proclamándose así campeones de la NBA.</li>
+                        <li><b><i>Golden Record Regular Season</i>:</b> Se encuentran los jugadores registrados que han participado en temporada regular pero no han jugados Playoffs.</li>
+                        <li><b><i>Golden Record Playoff</i>:</b> Se encuentran los jugadores que han participado en temporada regular y han accedido a los Playoffs en una o varias temporadas (teniendo participación almenos en una de ellas)</li>
+                        <li><b><i>Golden Record Ring</i>:</b> Se encuentran los jugadores que han participado en temporada regular, han accedido a los Playoffs y los han ganado en una o varias temporadas  (teniendo participación almenos en una de ellas), proclamándose así campeones de la NBA.</li>
                     </ol>
                     </p>
                  <img class="img-fluid img-profile mx-auto mb-2" src="assets/img/intersection.png" alt="..." width="650" height="300" title="Intersección de Golden Records" />
@@ -238,7 +238,11 @@
                    
                     
                     <p> El método K-Means también requiere especificar el número de clústers que se quieren obtener. No es obvio, a priori, saber qué número de grupos es mejor. Para hacer esta elección, existen procesos objetivos para determinar el número de clústers más adecuado según nuestros datos. En este caso, el método que se ha utilizado para
-                    esta elección ha sido el comúnmente conocido como el <a href="<a href="https://en.wikipedia.org/wiki/Elbow_method_(clustering)">Método del codo</a></p>
+                    esta elección ha sido el comúnmente conocido como el <a href="https://en.wikipedia.org/wiki/Elbow_method_(clustering)">Método del codo</a></p>. Finalmente, se obtiene como resultados el siguiente número de clústers adecuado para cada Golden Record:
+                    <ol>
+                        <li><b><i>Golden Record Regular Season:</i></b> K=3 (tres clústers)</li>
+                        <li><b><i>Golden Record Playoff:</i></b> K=4 (cuatro clústers)</li>
+                        <b><i>Golden Record Ring:</i></b> K=3 (tres clústers)</li>
                 </div>
             </section>
         </div>
