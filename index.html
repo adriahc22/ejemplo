@@ -223,6 +223,7 @@
                     <p> En la siguiente tabla adaptada de la documentación de sklearn podemos observar los diferentes métodos de clustering estudiados para el proyecto, sus parámetros correspondientes, escalabilidad, su uso y las nociones de similitud que utilizan, así como el formato de datos de entrada necesario:</p>
                      <img class="img-fluid img-profile mx-auto mb-2" src="assets/img/difclustering.png" alt="..." width="800" height="350" title="Ejemplos de métodos de clustering" />
                     <p> Tras el estudio llevado a cabo en el notebook <i>Data modelling.ipynb v3</i> se decide utilizar el método de clustering K-Means.Es el método de clustering más común, debido a que tiene muy buena escalabilidad. El algoritmo K-Means agrupa los datos tratando de separar las muestras en <i>n</i> grupos de igual varianza. En otras palabras, se divide un conjunto de <i>N</i> muestras <i>X</i> en <i>K</i> grupos distintos <i>C</i>, cada uno descrito por la media de las muestras en el grupo. Las medias se denominan comúnmente <b>centroides</b>.</p>
+                   
                     <p>Este algoritmo tiene como objetivo elegir los centroides que minimicen un criterio conocido como inercia o suma de cuadrados dentro del clúster, concepto que puede describirse como una medida de la coherencia interna de los grupos. Los pasos que sigue el algoritmo son los siguientes:</p>
                     <div class="subheading mb-3">Inicialización</div>
                     <p> Se elige la localización de los centroides de los K grupos aleatoriamente. En la siguiente imagen observamos los datos como círculos y los centroides como cuadrados.</p>
@@ -234,6 +235,8 @@
                     <p> Seguidamente se actualiza la posición del centroide a la media aritmética de las posiciones de los datos asignados a cada grupo. En la imagen se observa como cambia la posición de los centroides (cuadrados).</p>
                     <img class="img-fluid img-profile mx-auto mb-2" src="assets/img/kmeans3.png" alt="..." width="350" height="200" title="Actualización K-Means" />
                     <h3 class="mb-0">Metodología</h3>
+                    <p> Previamente al proceso de modelling, se lleva a cabo la normalización de los datos que van a ser analizados. En este contexto, "normalizar" se refiere a que los valores de cada atributo estén en escalas similares. El proceso de clustering del método K-Means se ejecuta a partir de las distancias entre los datos, por lo que si existen atributos con escalas muy diferentes
+                    , los atributos de escala mayor dominarán las distancias.</p>
                     <p>El método escogido para hacer el clustering no es capaz de establecer la relación entre atributos de entrada y los resultados, dado que no hay resultados válidos o resultados inválidos. La responsabilidad 
                     de identificar qué atributos (variables) son relevantes recae sobre nosotros.</p>
                    
@@ -246,7 +249,7 @@
                         <li><b><i>Golden Record Playoff:</i></b> K=4 (cuatro clústers)</li>
                         <li><b><i>Golden Record Ring:</i></b> K=3 (tres clústers)</li>
                     </ol>
-                     <img class="img-fluid img-profile mx-auto mb-2" src="assets/img/clusters1.png" alt="..." width="350" height="200" title="Clusters Golden Record Regular Season" />
+                     <img class="img-fluid img-profile mx-auto mb-2" src="assets/img/clusters1.png" alt="..." width="350" height="300" title="Clusters Golden Record Regular Season" />
                      <img class="img-fluid img-profile mx-auto mb-2" src="assets/img/clusters2.png" alt="..." width="350" height="200" title="Clusters Golden Record Playoff" />
                      <img class="img-fluid img-profile mx-auto mb-2" src="assets/img/clusters3.png" alt="..." width="350" height="200" title="Golden Record Ring" />
                     </p>
